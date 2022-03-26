@@ -34,12 +34,11 @@ const flatten = (arr) => {
   }
 console.log(flattenedArray)*/
 
-// By use of .flat method
+  // By use of .flat method
   return arr.flat();
 };
 
 console.log(flatten([1, 2, 3, 4, [5, 5], 6]));
 console.log(
-  assertArraysEqual(flatten([1, 2, 3, 4, [5, 5], 6]),
-  [1, 2, 3, 4, 5, 5, 6])
+  assertArraysEqual(flatten([1, 2, 3, 4, [5, 5], 6]), [1, 2, 3, 4, 5, 5, 6])
 );

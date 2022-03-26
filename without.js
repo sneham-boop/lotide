@@ -20,27 +20,25 @@ const assertArraysEqual = (array1, array2) => {
   }
 };
 
-// Remove the elements from original array without 
+// Remove the elements from original array without
 // modifying the original array
 const without = (originalItems, removeItems) => {
-  // Spread oeprator is used to copy orginal array 
+  // Spread oeprator is used to copy orginal array
   // without modifying it
   let resultingArray = [...originalItems];
 
   for (let i = 0; i < removeItems.length; i++) {
-    
     // Check is element to remove is present in original items
     if (resultingArray.includes(removeItems[i])) {
-
       // Get index of element to remove
       let index = resultingArray.indexOf(removeItems[i]);
-      
+
       // Get elements up to index (not including as per slice)
-      // concat value of remaining array 
+      // concat value of remaining array
       // Result is saved
       resultingArray = resultingArray
         .slice(0, index)
-        .concat(resultingArray.slice(index+1, resultingArray.length));
+        .concat(resultingArray.slice(index + 1, resultingArray.length));
     }
   }
 
@@ -51,6 +49,6 @@ const without = (originalItems, removeItems) => {
 //console.log(without([0, 1, 2, 3, 4, 5], [0, 1, 2, 3, 4, 5]));
 
 // test cases for without function
-const words = ["hello", "world", "lighthouse"]; 
+const words = ["hello", "world", "lighthouse"];
 console.log(without(words, ["lighthouse"]));
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
