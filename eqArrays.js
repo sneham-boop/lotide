@@ -9,6 +9,7 @@ const assertEqual = function (actual, expected) {
 const eqArrays = (array1, array2) => {
   let matchedResult = true;
   for (let i = 0; i < array1.length; i++) {
+    // check each element
     if (array1[i] !== array2[i]) {
       matchedResult = false;
     }
