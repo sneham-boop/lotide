@@ -30,4 +30,20 @@ const countLetters = function (stringToProcess) {
   return resultingCount;
 };
 
-console.log(countLetters("Who doesn't love coffee? Everyone does."));
+// console.log(countLetters("The world needs more love."));
+
+// Checks
+const result1 = countLetters("The world needs more love.");
+assertEqual(result1["T"], 1);
+assertEqual(result1["h"], 1);
+assertEqual(result1["e"], 5);
+assertEqual(result1["w"], 1);
+assertEqual(result1["o"], 3);
+assertEqual(result1["r"], 2);
+assertEqual(result1["l"], 2);
+assertEqual(result1["d"], 2);
+assertEqual(result1["n"], 1);
+assertEqual(result1["s"], 1);
+assertEqual(result1["m"], 1);
+assertEqual(result1["v"], 1);
+
