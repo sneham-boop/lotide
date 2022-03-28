@@ -1,3 +1,4 @@
+// Check if primitive values passed are equal
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     return console.log(`😀😀😀 Assertion Passed: ${actual} === ${expected}`);
