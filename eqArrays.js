@@ -7,14 +7,18 @@ const assertEqual = function(actual, expected) {
 };
 
 const eqArrays = (array1, array2) => {
-  let matchedResult = true;
+  // Return false when lengths not equal
+  if(array1.length !== array2.length) {
+    return false;
+  }
+  // Check each element, return false if index and value don't match
   for (let i = 0; i < array1.length; i++) {
-    // check each element
     if (array1[i] !== array2[i]) {
-      matchedResult = false;
+      return false;
     }
   }
-  return matchedResult;
+  // Return true if all code was evaluated
+  return true;
 };
 
 eqArrays([1, 2, 3], [1, 2, 3]); // => true
