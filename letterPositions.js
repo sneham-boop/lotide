@@ -20,7 +20,7 @@ const assertArraysEqual = (array1, array2) => {
 };
 
 // Get positions for each character
-const letterPositions = function (sentence) {
+const letterPositions = (sentence) => {
   const results = {};
   sentence = sentence.match(/\w/gi);
 
@@ -29,9 +29,8 @@ const letterPositions = function (sentence) {
   // to the key value pair, with the value being an array
   // of indices
   sentence.forEach((element, index) => {
-
     // Check if key value pair exists, if not create it
-    // and initialize with the first value being an index 
+    // and initialize with the first value being an index
     // when that character is first found
     if (results[element]) {
       results[element].push(index);

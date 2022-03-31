@@ -22,7 +22,7 @@ const assertArraysEqual = (array1, array2) => {
 
 
 // map function implementation
-const map = function (array, callback) {
+const map = function(array, callback) {
   const results = [];
   for (let item of array) {
     results.push(callback(item));
@@ -36,4 +36,4 @@ const words = ["ground", "control", "to", "major", "tom"];
 const results1 = map(words, (word) => word[0]);
 console.log(results1);
 // Test by assertion
-assertArraysEqual(map(words, (word) => word[0]), [ 'g', 'c', 't', 'm', 't' ])
+assertArraysEqual(map(words, (word) => word[0]), [ 'g', 'c', 't', 'm', 't' ]);

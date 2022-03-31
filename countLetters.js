@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = (actual, expected) => {
   if (actual === expected) {
     return console.log(`😀😀😀 Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -6,9 +6,9 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-// Counts letters in the input string. Upper case letters 
+// Counts letters in the input string. Upper case letters
 // are treated as different from lower case in this case.
-const countLetters = function (stringToProcess) {
+const countLetters = (stringToProcess) => {
   let resultingCount = {};
 
   // Drop spaces and any special characters
@@ -46,4 +46,3 @@ assertEqual(result1["n"], 1);
 assertEqual(result1["s"], 1);
 assertEqual(result1["m"], 1);
 assertEqual(result1["v"], 1);
-

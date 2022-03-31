@@ -1,5 +1,5 @@
 // Check if primitive values passed are equal
-const assertEqual = function (actual, expected) {
+const assertEqual = (actual, expected) => {
   if (actual === expected) {
     return console.log(`😀😀😀 Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -8,7 +8,6 @@ const assertEqual = function (actual, expected) {
 };
 
 const findKeyByValue = (obj, value) => {
-
   // Iterate over obj
   for (key in obj) {
     // Return the first key where "value" matches

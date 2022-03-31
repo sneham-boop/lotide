@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = (actual, expected) => {
   if (actual === expected) {
     return console.log(`😀😀😀 Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -8,7 +8,7 @@ const assertEqual = function(actual, expected) {
 
 const eqArrays = (array1, array2) => {
   // Return false when lengths not equal
-  if(array1.length !== array2.length) {
+  if (array1.length !== array2.length) {
     return false;
   }
   // Check each element, return false if index and value don't match
