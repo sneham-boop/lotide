@@ -9,7 +9,7 @@ const assertEqual = (actual, expected) => {
 
 const findKeyByValue = (obj, value) => {
   // Iterate over obj
-  for (key in obj) {
+  for (let key in obj) {
     // Return the first key where "value" matches
     // the values in obj
     if (obj[key] === value) {

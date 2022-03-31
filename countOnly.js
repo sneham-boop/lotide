@@ -10,7 +10,7 @@ const countOnly = (allItems, itemsToCount) => {
   let resultingCount = {};
 
   // Iterate over all elements of allItems
-  for (element of allItems) {
+  for (let element of allItems) {
     // Check if we need to count this element?
     if (itemsToCount[element] === true) {
       // Does this key/valye pair already exist?

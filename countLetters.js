@@ -15,7 +15,7 @@ const countLetters = (stringToProcess) => {
   stringToProcess = stringToProcess.match(/\w/gi);
 
   // Iterate over all characters of the string
-  for (character of stringToProcess) {
+  for (let character of stringToProcess) {
     // Does this key/valye pair already exist for the character?
     // If yes, add 1 to it.
     // If not, initiate it for a value of 1.
