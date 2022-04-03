@@ -1,4 +1,6 @@
-// Reture a true or false value if arrays are equal
+// Return a true or false value if arrays are equal
+// Function implementation for eqArrays()
+// Checks arrays for equality
 const eqArrays = (array1, array2) => {
   let matchedResult = true;
   for (let i = 0; i < array1.length; i++) {

@@ -1,3 +1,5 @@
+// Function implementation for assertEqual()
+// Checks if primitive values passed are equal
 const assertEqual = (actual, expected) => {
   if (actual === expected) {
     return console.log(`😀😀😀 Assertion Passed: ${actual} === ${expected}`);
@@ -30,9 +32,10 @@ const countLetters = (stringToProcess) => {
   return resultingCount;
 };
 
-// console.log(countLetters("The world needs more love."));
+// Tests
+console.log(countLetters("The world needs more love."));
 
-// Checks
+// Assertion checks
 const result1 = countLetters("The world needs more love.");
 assertEqual(result1["T"], 1);
 assertEqual(result1["h"], 1);

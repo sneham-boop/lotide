@@ -1,4 +1,5 @@
-// Check if primitive values passed are equal
+// Function implementation for assertEqual()
+// Checks if primitive values passed are equal
 const assertEqual = (actual, expected) => {
   if (actual === expected) {
     console.log(`😀😀😀 Assertion Passed: ${actual} === ${expected}`);
@@ -7,6 +8,9 @@ const assertEqual = (actual, expected) => {
   }
 };
 
+// Function implementation for findKey()
+// Returns key for which condition in callback function
+// is satisfied.
 const findKey = (obj, callback) => {
   // Iterate over obj
   for (let key in obj) {

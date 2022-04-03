@@ -1,3 +1,5 @@
+// Function implementation for assertEqual()
+// Checks if primitive values passed are equal
 const assertEqual = (actual, expected) => {
   if (actual === expected) {
     return console.log(`😀😀😀 Assertion Passed: ${actual} === ${expected}`);
@@ -6,6 +8,8 @@ const assertEqual = (actual, expected) => {
   }
 };
 
+// Function implementation for eqArrays()
+// Checks arrays for equality
 const eqArrays = (array1, array2) => {
   // Return false when lengths not equal
   if (array1.length !== array2.length) {
@@ -21,6 +25,7 @@ const eqArrays = (array1, array2) => {
   return true;
 };
 
+// Checks / tests
 eqArrays([1, 2, 3], [1, 2, 3]); // => true
 eqArrays([1, 2, 3], [3, 2, 1]); // => false
 

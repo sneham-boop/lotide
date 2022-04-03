@@ -1,3 +1,4 @@
+// Function implementation for eqArrays()
 // Checks arrays for equality
 const eqArrays = (array1, array2) => {
   // Return false when lengths not equal
@@ -15,6 +16,7 @@ const eqArrays = (array1, array2) => {
 };
 
 
+// Function implementation for eqObjects()
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
 const eqObjects = (object1, object2) => {

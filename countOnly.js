@@ -1,3 +1,5 @@
+// Function implementation for assertEqual()
+// Checks if primitive values passed are equal
 const assertEqual = (actual, expected) => {
   if (actual === expected) {
     return console.log(`😀😀😀 Assertion Passed: ${actual} === ${expected}`);
@@ -5,6 +7,14 @@ const assertEqual = (actual, expected) => {
     return console.log(`🥵🥵🥵 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+
+// Function implementation for countOnly()
+// This function takes in a collection of items and 
+// returns counts for a specific subset of those items. 
+// It won't count everything. In order to decide what to count, 
+// it will also be given an idea of which items we care about 
+// and it will only count those, ignoring the others.
+// Items in our case will be limited to Strings.
 
 const countOnly = (allItems, itemsToCount) => {
   let resultingCount = {};
@@ -28,6 +38,8 @@ const countOnly = (allItems, itemsToCount) => {
   return resultingCount;
 };
 
+
+// Checks / tests
 const firstNames = [
   "Karl",
   "Salima",
@@ -49,6 +61,7 @@ const result1 = countOnly(firstNames, {
 
 console.log(result1);
 
+// Assertion checks
 assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);
 assertEqual(result1["Fang"], 2);

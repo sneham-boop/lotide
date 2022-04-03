@@ -1,3 +1,4 @@
+// Function implementation for eqArrays()
 // Checks arrays for equality
 const eqArrays = (array1, array2) => {
   // Return false when lengths not equal
@@ -14,6 +15,8 @@ const eqArrays = (array1, array2) => {
   return true;
 };
 
+
+// Function implementation for eqObjects()
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
 const eqObjects = function(object1, object2) {
@@ -36,7 +39,7 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-// FUNCTION IMPLEMENTATION assertObjectsEqual
+// Function implementation for assertObjectsEqual()
 const assertObjectsEqual = function(actual, expected) {
   // Allows to actually show the values within the objects.
   const inspect = require("util").inspect;
