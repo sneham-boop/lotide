@@ -1,6 +1,8 @@
+// Import functions
 const assertEqual = require("../assertEqual");
 const tail = require("../tail");
 
+// Test code
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result.length, 2); 
 assertEqual(result[0], "Lighthouse"); 
