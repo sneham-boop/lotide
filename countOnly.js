@@ -38,6 +38,8 @@ const countOnly = (allItems, itemsToCount) => {
   return resultingCount;
 };
 
+module.exports = countOnly;
+
 
 // Checks / tests
 const firstNames = [

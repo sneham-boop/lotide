@@ -38,6 +38,8 @@ console.log(flattenedArray)*/
   return arr.flat();
 };
 
+module.exports = flatten;
+
 console.log(flatten([1, 2, 3, 4, [5, 5], 6]));
 console.log(
   assertArraysEqual(flatten([1, 2, 3, 4, [5, 5], 6]), [1, 2, 3, 4, 5, 5, 6])

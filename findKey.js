@@ -23,6 +23,8 @@ const findKey = (obj, callback) => {
   }
 };
 
+module.exports = findKey;
+
 // Checks
 const result1 = findKey(
   {

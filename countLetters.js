@@ -32,6 +32,8 @@ const countLetters = (stringToProcess) => {
   return resultingCount;
 };
 
+module.exports = countLetters;
+
 // Tests
 console.log(countLetters("The world needs more love."));
 

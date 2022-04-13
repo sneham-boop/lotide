@@ -30,6 +30,7 @@ const map = function(array, callback) {
   return results;
 };
 
+module.exports = map;
 
 // Checks
 const words = ["ground", "control", "to", "major", "tom"];

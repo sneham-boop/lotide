@@ -46,6 +46,8 @@ const without = (originalItems, removeItems) => {
   return resultingArray;
 };
 
+module.exports = without;
+
 //console.log(without([0, 1, 2, 3, 4, 5], [0, 1, 2, 3, 4, 5]));
 
 // test cases for without function
