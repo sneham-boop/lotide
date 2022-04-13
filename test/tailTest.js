@@ -1,13 +1,16 @@
 // Import functions
-const assertEqual = require("../assertEqual");
+const { assert } = require("chai");
 const tail = require("../tail");
 
 // Test code
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2); 
-assertEqual(result[0], "Lighthouse"); 
-assertEqual(result[1], "Labs"); 
+describe("#tail", () => {
+  it("returns ['Lighthouse', 'Labs'] for ['Hello', 'Lighthouse', 'Labs']", () => {
+    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    assert.deepEqual(result, ["Lighthouse", "Labs"]);
+  });
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); 
-assertEqual(words.length, 3); 
+  it("returns ['Lighthouse', 'Labs'] for ['Yo Yo', 'Lighthouse', 'Labs']", () => {
+    const result = tail(["Yo Yo", "Lighthouse", "Labs"]);
+    assert.deepEqual(result, ["Lighthouse", "Labs"]);
+  });
+});
