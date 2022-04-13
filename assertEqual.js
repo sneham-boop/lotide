@@ -1,12 +1,11 @@
 // Check if primitive values passed are equal
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    return console.log(`😀😀😀 Assertion Passed: ${actual} === ${expected}`);
+    console.log(`😀😀😀 Assertion Passed: ${actual} === ${expected}`);
   } else {
-    return console.log(`🥵🥵🥵 Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🥵🥵🥵 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
-// TEST CODE
-assertEqual("bam", "bam");
-assertEqual(1, 7);
+module.exports = assertEqual;
+
