@@ -10,14 +10,14 @@ const assertEqual = (actual, expected) => {
 
 // Counts letters in the input string. Upper case letters
 // are treated as different from lower case in this case.
-const countLetters = (stringToProcess) => {
+const countLetters = (sentence) => {
   let resultingCount = {};
 
   // Drop spaces and any special characters
-  stringToProcess = stringToProcess.match(/\w/gi);
+  sentence = sentence.match(/\w/gi);
 
   // Iterate over all characters of the string
-  for (let character of stringToProcess) {
+  for (let character of sentence) {
     // Does this key/valye pair already exist for the character?
     // If yes, add 1 to it.
     // If not, initiate it for a value of 1.

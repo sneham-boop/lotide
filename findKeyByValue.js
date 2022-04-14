@@ -2,20 +2,20 @@
 // Checks if primitive values passed are equal
 const assertEqual = (actual, expected) => {
   if (actual === expected) {
-    return console.log(`😀😀😀 Assertion Passed: ${actual} === ${expected}`);
+    console.log(`😀😀😀 Assertion Passed: ${actual} === ${expected}`);
   } else {
-    return console.log(`🥵🥵🥵 Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🥵🥵🥵 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
 // Function implementation for findKeyByValue()
 // Returns the first key for which the value matches
-const findKeyByValue = (obj, value) => {
+const findKeyByValue = (object, value) => {
   // Iterate over obj
-  for (let key in obj) {
+  for (let key in object) {
     // Return the first key where "value" matches
     // the key/value pair in obj
-    if (obj[key] === value) {
+    if (object[key] === value) {
       return key;
     }
   }
@@ -25,7 +25,7 @@ module.exports = findKeyByValue;
 
 // Checks
 const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
+  sciFi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama: "The Wire",
 };

@@ -22,16 +22,16 @@ const assertArraysEqual = (array1, array2) => {
 
 // Remove the elements from original array without
 // modifying the original array
-const without = (originalItems, removeItems) => {
+const without = (array1, array2) => {
   // Spread oeprator is used to copy orginal array
   // without modifying it
-  let resultingArray = [...originalItems];
+  let resultingArray = [...array1];
 
-  for (let i = 0; i < removeItems.length; i++) {
+  for (let i = 0; i < array2.length; i++) {
     // Check is element to remove is present in original items
-    if (resultingArray.includes(removeItems[i])) {
+    if (resultingArray.includes(array2[i])) {
       // Get index of element to remove
-      let index = resultingArray.indexOf(removeItems[i]);
+      let index = resultingArray.indexOf(array2[i]);
 
       // Get elements up to index (not including as per slice)
       // concat value of remaining array

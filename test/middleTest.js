@@ -3,7 +3,7 @@ const { assert } = require("chai");
 const middle = require("../middle");
 
 // Test code
-describe("#head", () => {
+describe("#middle", () => {
   it("returns [2,3] for [0, 1, 2, 3, 4, 5]", () => {
     assert.deepEqual(middle([0, 1, 2, 3, 4, 5]), [2, 3]);
   });

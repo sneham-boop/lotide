@@ -11,13 +11,13 @@ const assertEqual = (actual, expected) => {
 // Function implementation for findKey()
 // Returns key for which condition in callback function
 // is satisfied.
-const findKey = (obj, callback) => {
+const findKey = (object, callback) => {
   // Iterate over obj
-  for (let key in obj) {
+  for (let key in object) {
     // Return the first key where result of callback
     // function matches the key/value pairs in
     // the obj object
-    if (callback(obj[key])) {
+    if (callback(object[key])) {
       return key;
     }
   }

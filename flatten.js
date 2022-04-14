@@ -20,7 +20,7 @@ const assertArraysEqual = (array1, array2) => {
   }
 };
 
-const flatten = (arr) => {
+const flatten = (array) => {
   /* Alternative method
   let flattenedArray = [];
   for (let i = 0; i < arr.length; i++) {
@@ -35,7 +35,7 @@ const flatten = (arr) => {
 console.log(flattenedArray)*/
 
   // By use of .flat method
-  return arr.flat();
+  return array.flat();
 };
 
 module.exports = flatten;
