@@ -26,12 +26,12 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-### Mocha and Chai test framework used.
+**Mocha and Chai test framework used:**
 * `head(array)`: Returns the first element of array.
 * `tail(array)`: Returns the array without its first element.
 * `middle(array)`: Returns the middle (qty 1 or 2) elements depending on the length of the array being odd or even. Returns an empty array if number of elements is less than 3.
 
-### Rest of the functions use assertion testing via locally implemented assert and eq functions in each file.
+**Rest of the functions use assertion testing via locally implemented assert and eq functions in each file:**
 * `assertArraysEqual(array1, array2)`: Asserts if the passed arrays, array1 and array2, are equal or not.
 * `assertEqual(val1, val2)`: Asserts if the primitive values passed, val1 and val2, are equal or not. 
 * `assertObjectsEqual(object1, object2)`: Asserts if the objects passed, object1 and object2, are equal or not.
