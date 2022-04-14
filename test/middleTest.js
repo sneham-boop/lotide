@@ -1,6 +1,6 @@
 // Import functions
 const { assert } = require("chai");
-const middle = require("../middle");
+const middle = require("../utility_functions/middle");
 
 // Test code
 describe("#middle", () => {

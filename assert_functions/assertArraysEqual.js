@@ -1,5 +1,5 @@
 // Import functions
-const eqArrays = require("../eqArrays");
+const eqArrays = require("../utility_functions/eqArrays");
 
 // Function implementation assertArraysEqual
 // assertArraysEqual(array1, array2)

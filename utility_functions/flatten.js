@@ -1,5 +1,5 @@
 // Import functions
-const assertArraysEqual = require("./assert_functions/assertArraysEqual");
+const assertArraysEqual = require("../assert_functions/assertArraysEqual");
 
 // Function implementation flatten
 // flatten(array): Returns the flat version of the array passed.

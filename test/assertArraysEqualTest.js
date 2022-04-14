@@ -1,6 +1,5 @@
 // Import functions
 const assertArraysEqual = require("../assert_functions/assertArraysEqual");
-// const eqArrays = require("../eqArrays");
 
 // Test Code
 console.log("assertArraysEqual test assertions:");

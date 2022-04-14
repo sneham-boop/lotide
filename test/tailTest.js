@@ -1,6 +1,6 @@
 // Import functions
 const { assert } = require("chai");
-const tail = require("../tail");
+const tail = require("../utility_functions/tail");
 
 // Test code
 describe("#tail", () => {

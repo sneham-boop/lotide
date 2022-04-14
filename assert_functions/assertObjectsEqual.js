@@ -1,4 +1,4 @@
-const eqObjects = require("../eqObjects");
+const eqObjects = require("../utility_functions/eqObjects");
 
 // Function implementation assertObjectsEqual
 // assertObjectsEqual(object1, object2)

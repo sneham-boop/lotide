@@ -1,5 +1,5 @@
 // Import functions
-const assertEqual = require("./assert_functions/assertEqual");
+const assertEqual = require("../assert_functions/assertEqual");
 
 // Function implementation for countOnly
 // countOnly(array, object):
