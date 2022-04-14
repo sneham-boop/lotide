@@ -2,9 +2,11 @@
   "name": "@snehakm/lotide",
   "version": "1.0.0",
   "description": "A version of lodash",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "test",
+    "assert_functions":"assert_functions",
+    "utility_functions": "utility_functions"
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha"
