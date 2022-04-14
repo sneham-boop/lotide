@@ -1,5 +1,5 @@
 // Import functions
-const assertArraysEqual = require("./assertArraysEqual");
+const assertArraysEqual = require("./assert_functions/assertArraysEqual");
 
 // Function implementation map
 // map(array, callback): Returns a new array with the callback

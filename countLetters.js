@@ -1,5 +1,5 @@
 // Import functions
-const assertEqual = require("./assertEqual");
+const assertEqual = require("./assert_functions/assertEqual");
 
 // Function implementation countLetters
 // countLetters(sentence): Returns a count of each letter in the the sentence (string) passsed.

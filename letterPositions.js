@@ -1,5 +1,5 @@
 // Import functions
-const assertArraysEqual = require("./assertArraysEqual");
+const assertArraysEqual = require("./assert_functions/assertArraysEqual");
 
 // Function implementation letterPositions
 // letterPositions(sentence): Returns an array of 0 based

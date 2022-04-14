@@ -1,5 +1,5 @@
 // Import functions
-const assertEqual = require("./assertEqual");
+const assertEqual = require("./assert_functions/assertEqual");
 
 // Function implementation for findKey
 // findKey(object, callback): Returns the key for 

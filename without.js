@@ -1,5 +1,5 @@
 // Import functions
-const assertArraysEqual = require("./assertArraysEqual");
+const assertArraysEqual = require("./assert_functions/assertArraysEqual");
 
 // Function implementation for without
 // without(array1, array2 ): Returns an array of elements in 

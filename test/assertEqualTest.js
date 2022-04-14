@@ -1,5 +1,5 @@
 // Import functions
-const assertEqual = require("../assertEqual");
+const assertEqual = require("../assert_functions/assertEqual");
 
 // Test code
 console.log("\n\nassertEqual test assertions:");
