@@ -1,25 +1,9 @@
-// eqArrays function implementation
-const eqArrays = (array1, array2) => {
-  let matchedResult = true;
-  for (let i = 0; i < array1.length; i++) {
-    // check each element
-    if (array1[i] !== array2[i]) {
-      matchedResult = false;
-    }
-  }
-  return matchedResult;
-};
+// Import functions
+const assertArraysEqual = require("./assertArraysEqual");
 
-// assertArraysEqual function
-const assertArraysEqual = (array1, array2) => {
-  if (eqArrays(array1, array2) === true) {
-    console.log(`😀😀😀 Assertion Passed: [${array1}] === [${array2}]`);
-  } else {
-    console.log(`🥵🥵🥵 Assertion Failed: [${array1}] !== [${array2}]`);
-  }
-};
-
-// takeUntil function implementation
+// Function implementation for takeUntil
+// takeUntil(array, callback): Returns the array until 
+// the element for which the callback returns a true value.
 const takeUntil = (array, callback) => {
   let result = [];
   for (let i = 0; i < array.length; i++) {

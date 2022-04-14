@@ -1,5 +1,6 @@
-// Function implementation for assertEqual()
-// Checks if primitive values passed are equal
+// Function implementation assertEqual
+// assertEqual(val1, val2):
+// Asserts if the primitive values passed, val1 and val2, are equal or not.
 const assertEqual = (actual, expected) => {
   if (actual === expected) {
     console.log(`😀😀😀 Assertion Passed: ${actual} === ${expected}`);
@@ -8,8 +9,9 @@ const assertEqual = (actual, expected) => {
   }
 };
 
-// Function implementation for findKeyByValue()
-// Returns the first key for which the value matches
+// Function implementation for findKeyByValue
+// findKeyByValue(object, value): Returns the first key in object
+// where the value matches the passed value.
 const findKeyByValue = (object, value) => {
   // Iterate over obj
   for (let key in object) {

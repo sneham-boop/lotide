@@ -1,49 +1,31 @@
-// Check if the arrays passed are equal or not
-// "true" or "false" is returned as a result
-const eqArrays = (array1, array2) => {
-  let matchedResult = true;
-  for (let i = 0; i < array1.length; i++) {
-    // check each element
-    if (array1[i] !== array2[i]) {
-      matchedResult = false;
-    }
-  }
-  return matchedResult;
-};
+// Import functions
+const assertArraysEqual = require("./assertArraysEqual");
 
-// Print to console if the passed arrays are equal
-const assertArraysEqual = (array1, array2) => {
-  if (eqArrays(array1, array2) === true) {
-    return console.log(`😀😀😀 Assertion Passed: [${array1}] === [${array2}]`);
-  } else {
-    return console.log(`🥵🥵🥵 Assertion Failed: [${array1}] !== [${array2}]`);
-  }
-};
-
-// Remove the elements from original array without
-// modifying the original array
+// Function implementation for without
+// without(array1, array2 ): Returns an array of elements in 
+// array1 without the elements in array2.
 const without = (array1, array2) => {
   // Spread oeprator is used to copy orginal array
   // without modifying it
-  let resultingArray = [...array1];
+  let result = [...array1];
 
   for (let i = 0; i < array2.length; i++) {
     // Check is element to remove is present in original items
-    if (resultingArray.includes(array2[i])) {
+    if (result.includes(array2[i])) {
       // Get index of element to remove
-      let index = resultingArray.indexOf(array2[i]);
+      let index = result.indexOf(array2[i]);
 
       // Get elements up to index (not including as per slice)
       // concat value of remaining array
       // Result is saved
-      resultingArray = resultingArray
+      result = result
         .slice(0, index)
-        .concat(resultingArray.slice(index + 1, resultingArray.length));
+        .concat(result.slice(index + 1, result.length));
     }
   }
 
   // Return the resulting array
-  return resultingArray;
+  return result;
 };
 
 module.exports = without;

@@ -1,5 +1,6 @@
-// Function implementation for eqArrays()
-// Checks arrays for equality
+// Function implementation eqArrays
+// eqArrays(array1, array2)
+// Returns true if array1 and array2 are equal.
 const eqArrays = (array1, array2) => {
   // Return false when lengths not equal
   if (array1.length !== array2.length) {
@@ -15,11 +16,10 @@ const eqArrays = (array1, array2) => {
   return true;
 };
 
-
-// Function implementation for eqObjects()
-// Returns true if both objects have identical keys with identical values.
-// Otherwise you get back a big fat false!
-const eqObjects = function(object1, object2) {
+// Function implementation eqObjects
+// eqObjects(object1, object2)
+// Returns true if object1 and object2 are equal.
+const eqObjects = function (object1, object2) {
   // Check if same number of keys exist for both objects
   if (Object.keys(object1).length === Object.keys(object2).length) {
     // If yes, then for each key check if the value for that key is the same
@@ -39,14 +39,20 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-// Function implementation for assertObjectsEqual()
-const assertObjectsEqual = function(actual, expected) {
+// Function implementation assertObjectsEqual
+// assertObjectsEqual(object1, object2)
+// Asserts if the objects passed, object1 and object2, are equal or not.
+const assertObjectsEqual = function (actual, expected) {
   // Allows to actually show the values within the objects.
   const inspect = require("util").inspect;
   if (eqObjects(actual, expected) === true) {
-    console.log(`😀😀😀 Assertion Passed: [${inspect(actual)}] === [${inspect(expected)}]`);
+    console.log(
+      `😀😀😀 Assertion Passed: [${inspect(actual)}] === [${inspect(expected)}]`
+    );
   } else {
-    console.log(`🥵🥵🥵 Assertion Failed: [${inspect(actual)}] !== [${inspect(expected)}]`);
+    console.log(
+      `🥵🥵🥵 Assertion Failed: [${inspect(actual)}] !== [${inspect(expected)}]`
+    );
   }
 };
 

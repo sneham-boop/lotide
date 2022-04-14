@@ -1,41 +1,24 @@
-// Check if the arrays passed are equal or not
-// "true" or "false" is returned as a result
-const eqArrays = (array1, array2) => {
-  let matchedResult = true;
-  for (let i = 0; i < array1.length; i++) {
-    // check each element
-    if (array1[i] !== array2[i]) {
-      matchedResult = false;
-    }
-  }
-  return matchedResult;
-};
+// Import functions
+const assertArraysEqual = require("./assertArraysEqual");
 
-// Print to console if the passed arrays are equal
-const assertArraysEqual = (array1, array2) => {
-  if (eqArrays(array1, array2) === true) {
-    return console.log(`😀😀😀 Assertion Passed: [${array1}] === [${array2}]`);
-  } else {
-    return console.log(`🥵🥵🥵 Assertion Failed: [${array1}] !== [${array2}]`);
-  }
-};
-
+// Function implementation flatten
+// flatten(array): Returns the flat version of the array passed.
+// Only one nested level implemented.
 const flatten = (array) => {
-  /* Alternative method
-  let flattenedArray = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (!Array.isArray(arr[i])) {
-      flattenedArray.push(arr[i]);
+  let flatArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (!Array.isArray(array[i])) {
+      flatArray.push(array[i]);
     } else {
-      for (let j = 0; j < arr[i].length; j++) {
-        flattenedArray.push(arr[i][j]);
+      for (let j = 0; j < array[i].length; j++) {
+        flatArray.push(array[i][j]);
       }
     }
   }
-console.log(flattenedArray)*/
+  return flatArray;
 
-  // By use of .flat method
-  return array.flat();
+  // By use of .flat() method // Alternative method
+  // return array.flat();
 };
 
 module.exports = flatten;

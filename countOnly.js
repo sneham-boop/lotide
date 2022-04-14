@@ -1,5 +1,6 @@
-// Function implementation for assertEqual()
-// Checks if primitive values passed are equal
+// Function implementation assertEqual
+// assertEqual(val1, val2):
+// Asserts if the primitive values passed, val1 and val2, are equal or not.
 const assertEqual = (actual, expected) => {
   if (actual === expected) {
     console.log(`😀😀😀 Assertion Passed: ${actual} === ${expected}`);
@@ -8,28 +9,25 @@ const assertEqual = (actual, expected) => {
   }
 };
 
-// Function implementation for countOnly()
-// This function takes in a collection of items and
-// returns counts for a specific subset of those items.
-// It won't count everything. In order to decide what to count,
-// it will also be given an idea of which items we care about
-// and it will only count those, ignoring the others.
-// Items in our case will be limited to Strings.
+// Function implementation for countOnly
+// countOnly(array, object):
+// Returns an object containing counts of everything that the
+// input object listed as true, counted in the array passed.
 
 const countOnly = (array, object) => {
   let count = {};
 
   // Iterate over all elements of allItems
-  for (let element of array) {
+  for (let ele of array) {
     // Check if we need to count this element?
-    if (object[element] === true) {
-      // Does this key/valye pair already exist?
+    if (object[ele] === true) {
+      // Does this key/value pair already exist?
       // If yes, add 1 to it.
       // If not, initiate it for a value of 1.
-      if (count[element]) {
-        count[element] += 1;
+      if (count[ele]) {
+        count[ele] += 1;
       } else {
-        count[element] = 1;
+        count[ele] = 1;
       }
     }
   }
@@ -39,7 +37,6 @@ const countOnly = (array, object) => {
 };
 
 module.exports = countOnly;
-
 
 // Checks / tests
 const firstNames = [

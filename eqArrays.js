@@ -1,5 +1,6 @@
-// Function implementation for eqArrays()
-// Checks arrays for equality
+// Function implementation eqArrays
+// eqArrays(array1, array2)
+// Returns true if array1 and array2 are equal.
 const eqArrays = (array1, array2) => {
   // Return false when lengths not equal
   if (array1.length !== array2.length) return false;
