@@ -1,13 +1,5 @@
-// Function implementation assertEqual
-// assertEqual(val1, val2):
-// Asserts if the primitive values passed, val1 and val2, are equal or not.
-const assertEqual = (actual, expected) => {
-  if (actual === expected) {
-    return console.log(`😀😀😀 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    return console.log(`🥵🥵🥵 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// Import functions
+const assertEqual = require("./assertEqual");
 
 // Function implementation countLetters
 // countLetters(sentence): Returns a count of each letter in the the sentence (string) passsed.
