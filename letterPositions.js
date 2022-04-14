@@ -1,7 +1,10 @@
 // Import functions
 const assertArraysEqual = require("./assertArraysEqual");
 
-// Get positions for each character
+// Function implementation letterPositions
+// letterPositions(sentence): Returns an array of 0 based
+// indices of positions of each character in the sentence
+// string where each character is found.
 const letterPositions = (sentence) => {
   const results = {};
   sentence = sentence.match(/\w/gi);
