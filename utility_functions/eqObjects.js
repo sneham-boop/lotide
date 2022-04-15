@@ -1,4 +1,3 @@
-// Import functions
 const eqArrays = require("./eqArrays");
 
 // Function implementation eqObjects
@@ -10,7 +9,6 @@ const eqObjects = (object1, object2) => {
     // If yes, then for each key check if the value for that key is the same
     // in both objects
     for (let key of Object.keys(object1)) {
-      // Check for a value mismatch
       if (!eqArrays(object1[key], object2[key])) {
         return false;
       }

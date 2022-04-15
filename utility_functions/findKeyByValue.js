@@ -1,11 +1,9 @@
-// Import functions
 const assertEqual = require("../assert_functions/assertEqual");
 
 // Function implementation for findKeyByValue
 // findKeyByValue(object, value): Returns the first key in object
 // where the value matches the passed value.
 const findKeyByValue = (object, value) => {
-  // Iterate over obj
   for (let key in object) {
     // Return the first key where "value" matches
     // the key/value pair in obj

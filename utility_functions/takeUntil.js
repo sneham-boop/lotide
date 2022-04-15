@@ -1,4 +1,3 @@
-// Import functions
 const assertArraysEqual = require("../assert_functions/assertArraysEqual");
 
 // Function implementation for takeUntil

@@ -1,15 +1,11 @@
-// Import functions
 const assertEqual = require("../assert_functions/assertEqual");
 
 // Function implementation for findKey
-// findKey(object, callback): Returns the key for 
+// findKey(object, callback): Returns the key for
 // the first value in object where the callBack function returns true.
 const findKey = (object, callback) => {
-  // Iterate over obj
   for (let key in object) {
-    // Return the first key where result of callback
-    // function matches the key/value pairs in
-    // the obj object
+    // Return the first key where result of callback returns true
     if (callback(object[key])) {
       return key;
     }

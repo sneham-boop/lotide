@@ -1,4 +1,3 @@
-// Import functions
 const assertEqual = require("../assert_functions/assertEqual");
 
 // Function implementation countLetters
@@ -10,7 +9,6 @@ const countLetters = (sentence) => {
   // Drop spaces and any special characters
   sentence = sentence.match(/\w/gi);
 
-  // Iterate over all characters of the string
   for (let char of sentence) {
     // Does this key/value pair already exist for the character?
     // If yes, add 1 to it.

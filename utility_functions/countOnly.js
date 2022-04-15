@@ -1,4 +1,3 @@
-// Import functions
 const assertEqual = require("../assert_functions/assertEqual");
 
 // Function implementation for countOnly
@@ -9,13 +8,10 @@ const assertEqual = require("../assert_functions/assertEqual");
 const countOnly = (array, object) => {
   let count = {};
 
-  // Iterate over all elements of allItems
   for (let ele of array) {
     // Check if we need to count this element?
     if (object[ele] === true) {
       // Does this key/value pair already exist?
-      // If yes, add 1 to it.
-      // If not, initiate it for a value of 1.
       if (count[ele]) {
         count[ele] += 1;
       } else {
