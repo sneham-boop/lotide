@@ -1,6 +1,6 @@
 {
   "name": "@snehakm/lotide",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A version of lodash",
   "main": "index.js",
   "directories": {
