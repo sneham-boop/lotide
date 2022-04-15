@@ -3,7 +3,7 @@ const eqObjects = require("../utility_functions/eqObjects");
 // Function implementation assertObjectsEqual
 // assertObjectsEqual(object1, object2)
 // Asserts if the objects passed, object1 and object2, are equal or not.
-const assertObjectsEqual = function (actual, expected) {
+const assertObjectsEqual = (actual, expected) => {
   // Allows to actually show the values within the objects.
   const inspect = require("util").inspect;
   if (eqObjects(actual, expected) === true) {

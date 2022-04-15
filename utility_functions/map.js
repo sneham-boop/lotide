@@ -3,7 +3,7 @@ const assertArraysEqual = require("../assert_functions/assertArraysEqual");
 // Function implementation map
 // map(array, callback): Returns a new array with the callback
 // function applied to all elements within the input array.
-const map = function (array, callback) {
+const map = (array, callback) => {
   const results = [];
   for (let item of array) {
     results.push(callback(item));

@@ -1,7 +1,7 @@
 const assertArraysEqual = require("../assert_functions/assertArraysEqual");
 
 // Function implementation for takeUntil
-// takeUntil(array, callback): Returns the array until 
+// takeUntil(array, callback): Returns the array until
 // the element for which the callback returns a true value.
 const takeUntil = (array, callback) => {
   let result = [];

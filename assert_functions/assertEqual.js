@@ -1,7 +1,7 @@
 // Function implementation assertEqual
 // assertEqual(val1, val2)
 // Asserts if the primitive values passed, val1 and val2, are equal or not.
-const assertEqual = function (val1, val2) {
+const assertEqual = (val1, val2) => {
   if (val1 === val2) {
     console.log(`😀😀😀 Assertion Passed: ${val1} === ${val2}`);
   } else {
